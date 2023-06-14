@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Realloc</title>
+  <link rel="stylesheet" href="app.css">
+  <style>
+    /* Your CSS styles */
+    body {
+      background-image: url("g1.jpg");
+      background-size: cover;
+      transition: background-image 1.1s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Tech Realloc</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#careers">Careers</a></li>
+      </ul>
+    </nav>
+  </header>
+  <audio id="background-music" src="music.mp3" autoplay loop></audio>
+  <!-- Rest of your HTML content -->
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Tech Realloc is a company specializing in making predictions using machine learning algorithms and statistics. We provide accurate predictions for product demand in various industries, including machines and groceries. Additionally, we offer the following services:
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Grocery Demand Forecasting</li>
+      <li>Machine Demand Forecasting</li>
+      <li>Predicting Upcoming Losses</li>
+    </ul>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team">
+    <h2>Our Team</h2>
+    <div class="member">
+      <img src="C.jpeg" alt="CEO Picture">
+      <h3>Soumyajit Paramanick</h3>
+      <p>CEO</p>
+    </div>
+    <div class="member">
+      <img src="IMG_3387.jpg" alt="CTO Picture">
+      <h3>Bandana Nanda</h3>
+      <p>CTO</p>
+    </div>
+    <!-- Add more team members here -->
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      For inquiries or more information, please contact us through the following methods:
+    </p>
+    <ul>
+      <li>Email: info@techrealloc.com</li>
+      <li>Phone: 123-456-7890</li>
+      <!-- Add more contact methods here -->
+      <!-- Job and Career Section -->
+  <!-- Job and Career Section -->
+  <section id="careers">
+    <h2>Job and Career Opportunities</h2>
+    <p>Join our team and help shape the future of predictive analytics!</p>
+    <a href="carreers.html" target="_blank">Explore Jobs</a>
+  </section>
+
+    <!-- Add more job listings here -->
+    </ul>
+  </section>
+
+  <script src="index.js"></script>
+  <script>
+    // JavaScript code
+    window.addEventListener("load", function() {
+      var body = document.querySelector("body");
+      var images = ["g1.jpg", "g2.jpg", "g3.jpg", "g4.jpg", "g5.jpg", "g6.jpg"]; // Array of background images
+      var intervalTime = 5000; // Time interval in milliseconds (5 seconds)
+
+      function changeBackground() {
+        // Randomly select a background image
+        var randomIndex = Math.floor(Math.random() * images.length);
+        var randomImage = images[randomIndex];
+
+        body.style.backgroundImage = "url('" + randomImage + "')";
+      }
+
+      // Call the changeBackground function initially
+      changeBackground();
+
+      // Set interval to change the background image every intervalTime
+      setInterval(changeBackground, intervalTime);
+    });
+  </script>
+
+  <!-- Add the background music script -->
+  <script>
+    // JavaScript code
+    window.addEventListener("load", function() {
+      var audio = document.getElementById("background-music");
+
+      // Play or pause the audio based on user interaction
+      document.addEventListener("click", function() {
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
