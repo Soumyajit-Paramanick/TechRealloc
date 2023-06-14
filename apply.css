@@ -1,0 +1,92 @@
+/* Modal */
+#careers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  #careers h2 {
+    margin-bottom: 10px;
+  }
+  
+  #careers p {
+    margin-bottom: 20px;
+  }
+  
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Form */
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  #success-message {
+    margin-top: 10px;
+    color: #4CAF50;
+    font-weight: bold;
+    display: none;
+  }
+  

@@ -1,0 +1,63 @@
+<!-- Job and Career Section -->
+<link rel="stylesheet" href="apply.css">
+
+<section id="careers">
+    <h2>Job and Career Opportunities</h2>
+    <p>Join our team and help shape the future of predictive analytics!</p>
+    <button id="apply-button">Apply</button>
+  </section>
+  
+  <!-- Add a modal for the application form and success message -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Apply for Job</h2>
+      <form id="application-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="success-message" style="display: none;">You have successfully applied for the job!</p>
+    </div>
+  </div>
+  
+  <script>
+    // JavaScript code
+    window.addEventListener("load", function() {
+      var applyButton = document.getElementById("apply-button");
+      var modal = document.getElementById("modal");
+      var closeButton = document.querySelector(".close");
+      var applicationForm = document.getElementById("application-form");
+      var successMessage = document.getElementById("success-message");
+  
+      applyButton.addEventListener("click", function() {
+        modal.style.display = "block";
+      });
+  
+      closeButton.addEventListener("click", function() {
+        modal.style.display = "none";
+        successMessage.style.display = "none";
+        applicationForm.reset();
+      });
+  
+      applicationForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+  
+        // Get the applicant's details
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+  
+        // Display success message
+        successMessage.style.display = "block";
+        successMessage.innerHTML = "Dear " + name + ", you have successfully applied for the job!";
+  
+        // You can perform additional actions here, such as sending the form data to a server using AJAX
+  
+        // Reset the form
+        applicationForm.reset();
+      });
+    });
+  </script>
+  
