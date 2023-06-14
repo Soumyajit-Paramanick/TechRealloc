@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Realloc - Careers</title>
+  <link rel="stylesheet" href="carreers.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Tech Realloc</h1>
+    <nav>
+      <ul>
+      </ul>
+    </nav>
+  </header>
+  <audio id="background-music" src="music.mp3" autoplay loop></audio>
+  <!-- Careers Section -->
+  <section id="careers">
+    <h2>Join Our Team</h2>
+    <p>Explore exciting career opportunities in AI-ML and computer science!</p>
+    <div class="job">
+      <h3>Data Scientist</h3>
+      <p>We are seeking a highly skilled data scientist to develop and implement advanced machine learning models for data analysis and prediction.</p>
+      <a href="apply.html">Apply Now</a>
+    </div>
+    <div class="job">
+      <h3>Machine Learning Engineer</h3>
+      <p>We are looking for a machine learning engineer to design, develop, and deploy AI models and systems for various applications.</p>
+      <a href="apply.html">Apply Now</a>
+    </div>
+    <div class="job">
+      <h3>Software Engineer</h3>
+      <p>Join our software engineering team to develop cutting-edge software solutions for AI-ML applications and computer science projects.</p>
+      <a href="apply.html">Apply Now</a>
+    </div>
+    <!-- Add more job listings here -->
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      For inquiries or more information, please contact us through the following methods:
+    </p>
+    <ul>
+      <li>Email: info@techrealloc.com</li>
+      <li>Phone: 123-456-7890</li>
+      <!-- Add more contact methods here -->
+    </ul>
+  </section>
+
+  <script src="careers.js"></script>
+</script>
+<!-- Add the background music script -->
+<script>
+  // JavaScript code
+  window.addEventListener("load", function() {
+    var audio = document.getElementById("background-music");
+
+    // Play or pause the audio based on user interaction
+    document.addEventListener("click", function() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    });
+  });
+</script>
+</body>
+</html>

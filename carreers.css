@@ -1,0 +1,110 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+/* Header styles */
+header {
+    background-color: #4ea0bb;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  header nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  header nav ul li a {
+    color: #b3dbe1;
+    text-decoration: none;
+  }
+  
+  /* Careers section styles */
+  section#careers {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  section#careers h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  section#careers p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .job {
+    background-color: #50cdc9;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .job h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .job p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .job a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .job a:hover {
+    background-color: #555;
+  }
+  
+  /* Contact section styles */
+  section#contact {
+    background-color: #7a9ba0;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  section#contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  section#contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  section#contact ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
